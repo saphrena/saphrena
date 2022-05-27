@@ -1,4 +1,4 @@
-package com.saphrena;
+package com.saphrena.LeetCode;
 
 
 /**

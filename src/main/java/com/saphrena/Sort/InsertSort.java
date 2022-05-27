@@ -11,15 +11,15 @@ import java.util.Arrays;
 public class InsertSort {
     public static void sort(int[] num) {
         int length = num.length;
-        int insertNum;
-        for (int i = 0; i < length; i++) {
+        int insertNum;    //插入数
+        for (int i = 1; i < length; i++) {  //插入次数
           insertNum= num[i];
-          int j = i-1;
+          int j = i-1;   // 已排好序列的元素个数
              while(j>=0 && num[j] > insertNum){
-                 num[j+1] = num[j];
+                 num[j+1] = num[j]; //大的元素往后移动一格
                  j--;
              }
-            num[j+1] = insertNum;
+            num[j+1] = insertNum;  //将需要插入的数放在要插入的位置
         }
         System.out.println(Arrays.toString(num));
     }

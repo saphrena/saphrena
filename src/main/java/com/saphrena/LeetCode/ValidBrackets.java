@@ -1,4 +1,4 @@
-package com.saphrena;
+package com.saphrena.LeetCode;
 
 import com.saphrena.Utils.PrintUtils;
 import lombok.extern.slf4j.Slf4j;

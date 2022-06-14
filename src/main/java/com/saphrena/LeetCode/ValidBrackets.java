@@ -6,6 +6,7 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
+import java.util.Stack;
 
 /**
  * @author 热河
@@ -16,9 +17,11 @@ import java.util.Map;
 
 /**
  * 算法原理
- * 栈先入后出特点恰好与本题括号排序特点一致，即若遇到左括号入栈，遇到右括号时将对应栈顶左括号出栈，则遍历完所有括号后 stack 仍然为空；
+ * 栈先入后出特点恰好与本题括号排序特点一致，即若遇到左括号入栈，
+ * 遇到右括号时将对应栈顶左括号出栈，则遍历完所有括号后 stack 仍然为空；
  * 建立哈希表 dic 构建左右括号对应关系：key左括号，value右括号；
- * 当我们遇到一个右括号时，我们需要将一个相同类型的左括号闭合。此时，我们可以取出栈顶的左括号并判断它们是否是相同类型的括号。
+ * 当我们遇到一个右括号时，我们需要将一个相同类型的左括号闭合。
+ * 此时，我们可以取出栈顶的左括号并判断它们是否是相同类型的括号。
  * 如果不是相同的类型，或者栈中并没有左括号，那么字符串 ss 无效，返回False。
  * @author saphrena
  */
@@ -52,7 +55,7 @@ public class ValidBrackets {
     }
 
     public static void main(String[] args) {
-        if(new ValidBrackets().isValid("()")){
+        if(new ValidBrackets().isValid("[{(})]")){
             PrintUtils.printlnGreen("Succeeded",System.err);
         }
     }

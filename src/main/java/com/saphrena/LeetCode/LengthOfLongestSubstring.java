@@ -16,20 +16,22 @@ public class LengthOfLongestSubstring {
         int len = s.length();
         if(len == 0) {return;}
         HashMap<Object, Integer> map = new HashMap<>();
-        int max = 0;
-        int left = 0;
-        for(int i = 0; i < len; i++){
-            if(map.containsKey(s.charAt(i))){
-                left = Math.max(left,map.get(s.charAt(i))+1);  //从字符位置后一个才开始不重复
+        int max = 1, left = 0;
+
+        for(int right = 0; right < len; right++){
+            while(map.containsKey(s.charAt(right))){
+                //left = Math.max(left,map.get(s.charAt(i))+1);  //从字符位置后一个才开始不重复
+                map.remove(s.charAt(right));
+                left++;
             }
-            map.put(s.charAt(i),i);
-            max = Math.max(max,i-left+1);   //无重复最长
+            map.put(s.charAt(right),right);
+            max = Math.max(max,right-left+1);   //无重复最长
         }
         System.out.println(max);
     }
 
     public static void main(String[] args) {
-        String s  = "abcdsab";
+        String s  = "abcab";
         resolve(s);
     }
 }

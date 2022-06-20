@@ -18,11 +18,15 @@ public class MergeSort {
         // >>运算符是按位右移运算符,一般来说-i << k等效于i*(2^k)，而i >> k等效于i/(2^k)
         if (start >= end)
             return;
+
+        //分
         int len = end - start, mid = (len >> 1) + start;
         int start1 = start, end1 = mid;
         int start2 = mid + 1, end2 = end;
         Sort(arr, temp, start1, end1);
         Sort(arr, temp, start2, end2);
+
+        //并
         int k = start;
         while (start1 <= end1 && start2 <= end2)
             temp[k++] = arr[start1] < arr[start2] ? arr[start1++] : arr[start2++];
@@ -30,6 +34,7 @@ public class MergeSort {
             temp[k++] = arr[start1++];
         while (start2 <= end2)
             temp[k++] = arr[start2++];
+
         for (k = start; k <= end; k++)
             arr[k] = temp[k];
     }

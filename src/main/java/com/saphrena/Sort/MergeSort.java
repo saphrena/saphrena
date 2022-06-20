@@ -38,7 +38,7 @@ public class MergeSort {
     public static void main(String[] args) {
          int[] arr= {7,23,45,65,23,8,34};
          int len = arr.length;
-         int[] temp = new int[len];
+         int[] temp = new int[arr.length];
          log.info(Arrays.toString(arr));
          Sort(arr,temp,0,len-1);
          log.info(Arrays.toString(arr));

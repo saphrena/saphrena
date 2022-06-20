@@ -30,9 +30,23 @@ public class MaxProfit {
         return maxProfit;
     }
 
+    public int resolve1(int[] arr){
+        int maxProfit = 0;
+        for(int i = 0;i<arr.length -1;i++)
+            for(int j = i+1; j<arr.length;j++){
+                int profit = arr[j] - arr[i];
+                if(profit > maxProfit){
+                    maxProfit = profit;
+                }
+            }
+        return maxProfit;
+    } // 暴力法
+
     public static void main(String[] args) {
         int[] arr = {5,7,9,2,4,5,78,9,2};
         int resolve = new MaxProfit().resolve(arr);
+        int resolve1 = new MaxProfit().resolve1(arr);
         System.out.println(resolve);
+        System.out.println(resolve1);
     }
 }

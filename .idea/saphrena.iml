@@ -20,5 +20,18 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:5.3.18" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-core:5.3.18" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-jcl:5.3.18" level="project" />
+    <orderEntry type="library" name="Maven: com.ericsson.research.trap.transports:http-server-servlet-3.0:1.4.2" level="project" />
+    <orderEntry type="library" name="Maven: com.ericsson.research.trap:trap-core:1.4.2" level="project" />
+    <orderEntry type="library" name="Maven: com.ericsson.research.trap:trap-api:1.4.2" level="project" />
+    <orderEntry type="library" name="Maven: com.ericsson.research.trap:trap-utils-api:1.4.2" level="project" />
+    <orderEntry type="library" name="Maven: com.ericsson.research.trap:trap-utils-15:1.4.2" level="project" />
+    <orderEntry type="library" name="Maven: com.ericsson.research.trap.transports:http-server-servlet-2.5:1.4.2" level="project" />
+    <orderEntry type="library" name="Maven: com.github.roughy.http.util:HttpServletRequestX:0.1" level="project" />
+    <orderEntry type="library" name="Maven: javax.servlet:servlet-api:3.0-alpha-1" level="project" />
+    <orderEntry type="library" name="Maven: junit:junit-dep:4.8.1" level="project" />
+    <orderEntry type="library" name="Maven: org.mockito:mockito-all:1.9.5-rc1" level="project" />
+    <orderEntry type="library" name="Maven: com.google.inject:guice:3.0" level="project" />
+    <orderEntry type="library" name="Maven: javax.inject:javax.inject:1" level="project" />
+    <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
   </component>
 </module>

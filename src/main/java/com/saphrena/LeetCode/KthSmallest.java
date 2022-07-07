@@ -46,13 +46,13 @@ public class KthSmallest {
   * **/
 
  public int resolve1(TreeNode root, int k) {
-     Deque<TreeNode> d = new ArrayDeque<>(); //双端队列
-     while (root != null || !d.isEmpty()) {
+     Deque<TreeNode> ad = new ArrayDeque<>(); //双端队列
+     while (root != null || !ad.isEmpty()) {
          while (root != null) {
-             d.addLast(root); //顺时针方向插入
+             ad.addLast(root); //顺时针方向插入
              root = root.left;
          }
-         root = d.pollLast(); //尾端移除元素
+         root = ad.pollLast(); //尾端移除元素
          if (--k == 0) return root.val;
          root = root.right;
      }

@@ -37,7 +37,7 @@ public class Multithreading extends Thread{
                 if(tick>0){
                     System.out.println(getName()+"卖出了第"+tick+"张票");
                     tick--;
-                }else {
+                } else {
                     System.out.println("票卖完了");
                 }
             }

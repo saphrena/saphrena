@@ -21,7 +21,7 @@ import com.saphrena.Java.TreeNode;
  */
 
 
-public class TreeToListNode {
+public class TreeToDoubleLinkedList {
     public TreeNode Convert(TreeNode rootTree){
         if(rootTree == null){return null;}
         if(rootTree.left == null && rootTree.right == null){return null;}

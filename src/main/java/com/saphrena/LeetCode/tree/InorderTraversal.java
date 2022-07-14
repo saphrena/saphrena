@@ -32,7 +32,7 @@ public class InorderTraversal {
             return;
         }
         inorder(root.left, res); //左
-        res.add(root.val);  // 跟
+        res.add(root.val);  // 根
         inorder(root.right, res); //右
     }
 }

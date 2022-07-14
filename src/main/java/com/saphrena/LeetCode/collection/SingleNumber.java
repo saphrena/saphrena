@@ -1,4 +1,4 @@
-package com.saphrena.LeetCode;
+package com.saphrena.LeetCode.collection;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -16,6 +16,7 @@ import java.util.Map;
 
 
 public class SingleNumber {
+
 
     // 此为HashSet解法
     public int resolve1(int[] nums) {

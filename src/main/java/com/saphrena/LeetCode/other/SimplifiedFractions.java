@@ -1,4 +1,4 @@
-package com.saphrena.LeetCode;
+package com.saphrena.LeetCode.other;
 
 import com.google.common.collect.Lists;
 import java.util.List;

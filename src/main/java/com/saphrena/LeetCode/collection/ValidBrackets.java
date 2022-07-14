@@ -1,4 +1,4 @@
-package com.saphrena.LeetCode;
+package com.saphrena.LeetCode.collection;
 
 import com.saphrena.Utils.PrintUtils;
 import lombok.extern.slf4j.Slf4j;
@@ -6,7 +6,6 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
-import java.util.Stack;
 
 /**
  * @author 热河

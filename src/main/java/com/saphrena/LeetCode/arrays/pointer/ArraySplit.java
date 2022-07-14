@@ -1,7 +1,5 @@
-package com.saphrena.LeetCode;
+package com.saphrena.LeetCode.arrays.pointer;
 
-
-import org.slf4j.Logger;
 
 /**
  * @author saphrena

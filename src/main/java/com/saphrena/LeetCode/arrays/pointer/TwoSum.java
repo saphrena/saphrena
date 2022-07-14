@@ -1,4 +1,4 @@
-package com.saphrena.LeetCode;
+package com.saphrena.LeetCode.arrays.pointer;
 
 /**
  * @author 数据组-热河

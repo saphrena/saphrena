@@ -4,7 +4,7 @@ import com.saphrena.Java.TreeNode;
 
 /**
  * @author saphrena
- * @description maxDepth
+ * @description 二叉树最大深度
  * @create 2022/7/15 015 4:33
  *
  * 如果我们知道了左子树和右子树的最大深度 ll 和 rr，那么该二叉树的最大深度即为max(l,r)+1

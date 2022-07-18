@@ -1,7 +1,5 @@
 package com.saphrena.LeetCode.tree;
 
-import com.saphrena.LeetCode.tree.tree.TrueRecursion;
-
 /**
  * @author saphrena
  * @description 二叉树的最小深度
@@ -10,7 +8,7 @@ import com.saphrena.LeetCode.tree.tree.TrueRecursion;
 
 
 public class MinDepth {
-    public int resolve(TrueRecursion.Node head){
+    public int resolve(TreeNode head){
         if(head == null ){
             return 0;
         }
@@ -19,7 +17,7 @@ public class MinDepth {
 
     //当前节点来到的节点是cur，深度为level
     //遍历cur子树
-    public int process(TrueRecursion.Node cur , int level){
+    public int process(TreeNode cur , int level){
         if(cur.left == null && cur.right == null){
             return level;
         }

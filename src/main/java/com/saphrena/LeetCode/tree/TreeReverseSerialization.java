@@ -32,4 +32,35 @@ public class TreeReverseSerialization {
         head.right = PreOrder(queue);
         return head;
     }
+
+
+        //按层遍历
+    public TreeNode resolve2(String str){
+        String[] arrays = str.split("!");
+
+        Queue<TreeNode> queue = new LinkedList<>();
+        int index = 0;
+        TreeNode head = generateTreeNodeByString(arrays[index++]);
+        if(head != null){
+            queue.offer(head);
+        }
+        while(!queue.isEmpty()){
+            TreeNode node = queue.poll();
+             node.left = generateTreeNodeByString(arrays[index++]);
+             node.right = generateTreeNodeByString(arrays[index++]);
+             if(node.left != null){
+                 queue.offer(node.left);
+             }
+            if(node.right != null){
+                queue.offer(node.right);
+            }
+        }
+        return head;
+    }
+    public TreeNode generateTreeNodeByString(String str){
+        if(str.equals("#")){
+            return null;
+        }
+        return new TreeNode(Integer.parseInt(str));
+    }
 }
